@@ -13,6 +13,8 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
+  --width-8xl: 90rem;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -22,6 +24,7 @@
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary-deep: var(--primary-deep);
+  --color-primary-abyss: var(--primary-abyss);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
@@ -51,6 +54,7 @@
   --primary: oklch(0.34 0.11 262);        /* #163B73 corporate navy */
   --primary-foreground: oklch(0.985 0 0);
   --primary-deep: oklch(0.24 0.09 262);
+  --primary-abyss: oklch(0.16 0.06 262);  /* deepest navy — keeps footer distinct from adjacent dark CTAs */
   --gold: oklch(0.73 0.13 78);            /* #D39B35 refined gold */
   --gold-foreground: oklch(0.24 0.09 262);
   --accent: oklch(0.55 0.22 262);         /* #2563EB */
@@ -118,11 +122,8 @@
 
 @utility container-x {
   width: 100%;
+  max-width: var(--width-8xl);
   margin-inline: auto;
-  padding-inline: 1.25rem;
-  max-width: 1280px;
-  @media (min-width: 768px) { padding-inline: 2rem; }
-  @media (min-width: 1280px) { padding-inline: 2.5rem; }
 }
 
 @utility eyebrow {
@@ -154,10 +155,31 @@
   animation: reveal-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+  will-change: transform;
 }
-@utility marquee {
-  animation: marquee 40s linear infinite;
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0,0,0);
+  }
+  to {
+    transform: translate3d(-50%,0,0);
+  }
+}
+
+@keyframes caret-blink {
+  0%, 45% { opacity: 1; }
+  50%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@utility caret-blink {
+  animation: caret-blink 1s step-end infinite;
 }
