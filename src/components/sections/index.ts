@@ -1,0 +1,16 @@
+export { Header } from "./Header";
+export { Hero } from "./Hero";
+export { ClientBar } from "./ClientBar";
+export { About } from "./About";
+export { WhyChoose } from "./WhyChoose";
+export { Services } from "./Services";
+export { Industries } from "./Industries";
+export { Projects } from "./Projects";
+export { Process } from "./Process";
+export { QualitySafety } from "./QualitySafety";
+export { Counters } from "./Counters";
+export { Testimonials } from "./Testimonials";
+export { FAQ } from "./FAQ";
+export { FinalCTA } from "./FinalCTA";
+export { Footer } from "./Footer";
+export { FloatingCTA } from "./FloatingCTA";
