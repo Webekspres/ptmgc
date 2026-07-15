@@ -49,12 +49,19 @@ export function Services() {
   return (
     <section id="services" className="py-28 md:py-36 px-8 md:px-16">
       <div className="container-x">
-        <SectionHeader
-          eyebrow="Layanan Kami"
-          title={<>Empat kapabilitas dalam satu mitra terpercaya.</>}
-          intro="MGC memadukan trading, konstruksi, teknik, dan manajemen proyek dalam satu titik akuntabilitas — sehingga spesifikasi, linimasa, dan anggaran Anda terjaga dari awal hingga akhir."
-          className="max-w-5xl"
-        />
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div className="lg:col-span-8">
+            <SectionHeader
+              eyebrow="Layanan Kami"
+              title={<>Empat kapabilitas dalam satu mitra terpercaya.</>}
+            />
+          </div>
+          <p className="text-body lg:col-span-4">
+            MGC memadukan trading, konstruksi, teknik, dan manajemen proyek dalam satu titik
+            akuntabilitas — sehingga spesifikasi, linimasa, dan anggaran Anda terjaga dari awal
+            hingga akhir.
+          </p>
+        </div>
 
         <div className="mt-16 grid gap-6 lg:grid-cols-2">
           {services.map((s) => (

@@ -44,16 +44,23 @@ export function Process() {
   return (
     <section id="process" className="bg-surface-2 py-28 md:py-36 px-6 md:px-10">
       <div className="container-x">
-        <SectionHeader
-          eyebrow="Proses Kerja Kami"
-          title={
-            <>
-              Alur kerja disiplin dari
-              <br className="hidden md:block" /> awal hingga proyek selesai.
-            </>
-          }
-          intro="Setiap proyek mengikuti metodologi yang sama sehingga kualitas, jadwal, dan hasil tetap konsisten."
-        />
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div className="lg:col-span-8">
+            <SectionHeader
+              eyebrow="Proses Kerja Kami"
+              title={
+                <>
+                  Alur kerja disiplin dari
+                  <br className="hidden md:block" /> awal hingga proyek selesai.
+                </>
+              }
+            />
+          </div>
+          <p className="text-body lg:col-span-4">
+            Setiap proyek mengikuti metodologi yang sama sehingga kualitas, jadwal, dan hasil
+            tetap konsisten.
+          </p>
+        </div>
 
         <div className="mt-16 space-y-8">
           {[steps.slice(0, 4), steps.slice(4)].map((row, rowIndex) => (

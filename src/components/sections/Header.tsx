@@ -94,7 +94,7 @@ export function Header() {
 
         <button
           onClick={() => setOpen((v) => !v)}
-          className={`lg:hidden rounded-sm p-2 transition ${scrolled ? "text-ink" : "text-white"}`}
+          className={`lg:hidden rounded-sm p-2 transition cursor-pointer ${scrolled ? "text-ink" : "text-white"}`}
           aria-label="Buka menu navigasi"
         >
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

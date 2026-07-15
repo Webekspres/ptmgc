@@ -58,7 +58,9 @@ export function Projects() {
             >
               <div
                 className={`relative h-full overflow-hidden ${
-                  i === 0 ? "aspect-video lg:aspect-auto" : "aspect-square lg:aspect-auto"
+                  i === 0
+                    ? "min-h-[28rem] aspect-[4/5] sm:min-h-[32rem] lg:aspect-auto lg:min-h-0"
+                    : "min-h-[24rem] aspect-[4/5] sm:aspect-square lg:aspect-auto lg:min-h-0"
                 }`}
               >
                 <img
