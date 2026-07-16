@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { CONTACT_URL } from "./constants";
+import { CONTACT_URL, WHATSAPP_DISPLAY } from "./constants";
 import { SectionHeader } from "./primitives";
 
 import serviceTrading from "@/assets/service-trading.jpg";
@@ -111,7 +111,10 @@ export function Services() {
                   rel="noopener noreferrer"
                   className="mt-8 inline-flex items-center gap-2 border-b border-primary/30 pb-1 text-sm font-semibold text-primary transition hover:border-primary hover:gap-3"
                 >
-                  Konsultasi dengan Tim Kami
+                  <span className="flex flex-col items-start leading-tight">
+                    <span>Konsultasi dengan Tim Kami</span>
+                    <span className="text-[10px] font-normal text-body/70">{WHATSAPP_DISPLAY}</span>
+                  </span>
                   <ArrowRight className="h-4 w-4" strokeWidth={2.25} />
                 </a>
               </div>

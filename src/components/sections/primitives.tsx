@@ -1,5 +1,5 @@
-import { ArrowRight } from "lucide-react";
-import { CONTACT_URL } from "./constants";
+import { ArrowRight, MessageCircle } from "lucide-react";
+import { CONTACT_URL, WHATSAPP_DISPLAY } from "./constants";
 import { useTypewriter } from "./hooks";
 
 /* -------------------------------------------------------------------------- */
@@ -17,6 +17,7 @@ export function PrimaryCTA({
   className?: string;
   href?: string;
 }) {
+  const isWhatsApp = href === CONTACT_URL;
   const base =
     "inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 will-change-transform";
   const styles: Record<string, string> = {
@@ -34,7 +35,15 @@ export function PrimaryCTA({
       className={`${base} ${styles[variant]} ${className}`}
       {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
     >
-      {children}
+      <span className="flex flex-col items-center gap-0.5">
+        <span>{children}</span>
+        {isWhatsApp ? (
+          <span className="inline-flex items-center gap-1 text-[10px] font-normal opacity-70">
+            <MessageCircle className="h-2.5 w-2.5" strokeWidth={2.5} />
+            {WHATSAPP_DISPLAY}
+          </span>
+        ) : null}
+      </span>
     </a>
   );
 }

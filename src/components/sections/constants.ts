@@ -7,6 +7,7 @@ export const EMAIL_URL = `mailto:${EMAIL}`;
 export const WHATSAPP = "622674871905";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP}`;
 export const CONTACT_URL = WHATSAPP_URL;
+export const WHATSAPP_DISPLAY = "+62-267-4871905";
 
 export const NAV = [
   { id: "about", label: "Perusahaan" },
