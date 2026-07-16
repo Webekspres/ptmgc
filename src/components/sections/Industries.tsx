@@ -62,7 +62,7 @@ export function Industries() {
   return (
     <section
       id="industries"
-      className="relative overflow-hidden bg-primary-deep py-28 text-white md:py-36 px-8 md:px-16"
+      className="relative overflow-hidden bg-primary-deep py-16 text-white md:py-36 px-8 md:px-16"
     >
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.06]"

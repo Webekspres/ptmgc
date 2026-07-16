@@ -35,7 +35,7 @@ export function WhyChoose() {
     },
   ];
   return (
-    <section id="why-choose" className="bg-surface-2 py-28 md:py-36 px-8 md:px-16">
+    <section id="why-choose" className="bg-surface-2 py-16 md:py-36 px-8 md:px-16">
       <div className="container-x">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-8">

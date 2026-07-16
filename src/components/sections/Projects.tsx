@@ -29,7 +29,7 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="px-8 py-28 md:px-16 md:py-36">
+    <section id="projects" className="px-8 py-16 md:px-16 md:py-36">
       <div className="container-x">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeader

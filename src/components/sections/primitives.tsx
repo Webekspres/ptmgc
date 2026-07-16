@@ -27,8 +27,13 @@ export function PrimaryCTA({
     "outline-light":
       "border border-white/40 text-white hover:bg-white hover:text-primary backdrop-blur-sm",
   };
+  const isExternal = href.startsWith("http");
   return (
-    <a href={href} className={`${base} ${styles[variant]} ${className}`}>
+    <a
+      href={href}
+      className={`${base} ${styles[variant]} ${className}`}
+      {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+    >
       {children}
     </a>
   );

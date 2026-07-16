@@ -23,7 +23,7 @@ export function Testimonials() {
     },
   ];
   return (
-    <section id="testimonials" className="bg-surface-2 py-28 md:py-36 px-8 md:px-16">
+    <section id="testimonials" className="bg-surface-2 py-16 md:py-36 px-8 md:px-16">
       <div className="container-x">
         <SectionHeader
           eyebrow="Testimoni Klien"

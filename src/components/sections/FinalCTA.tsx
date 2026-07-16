@@ -7,7 +7,7 @@ export function FinalCTA() {
   return (
     <section
       id="contact"
-      className="relative isolate overflow-hidden bg-primary-deep py-28 text-white md:py-36 px-8 md:px-16"
+      className="relative isolate overflow-hidden bg-primary-deep py-16 text-white md:py-36 px-8 md:px-16"
     >
       <img
         src={heroImg}
@@ -44,6 +44,8 @@ export function FinalCTA() {
 
             <a
               href={CONTACT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-1.5 text-sm font-semibold text-white/80 transition hover:text-gold"
             >
               Mulai Proyek Anda
@@ -55,6 +57,8 @@ export function FinalCTA() {
 
             <a
               href={CONTACT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-1.5 text-sm font-semibold text-white/80 transition hover:text-gold"
             >
               Dapatkan Saran Profesional

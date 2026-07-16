@@ -4,7 +4,9 @@ export const PHONE = "+62-267-4871905";
 export const PHONE_URL = "tel:+622674871905";
 export const EMAIL = "info@ptmgc.co.id";
 export const EMAIL_URL = `mailto:${EMAIL}`;
-export const CONTACT_URL = EMAIL_URL;
+export const WHATSAPP = "622674871905";
+export const WHATSAPP_URL = `https://wa.me/${WHATSAPP}`;
+export const CONTACT_URL = WHATSAPP_URL;
 
 export const NAV = [
   { id: "about", label: "Perusahaan" },

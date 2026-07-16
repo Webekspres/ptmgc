@@ -47,7 +47,7 @@ export function Services() {
     },
   ];
   return (
-    <section id="services" className="py-28 md:py-36 px-8 md:px-16">
+    <section id="services" className="py-16 md:py-36 px-8 md:px-16">
       <div className="container-x">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-8">
@@ -107,6 +107,8 @@ export function Services() {
                 </ul>
                 <a
                   href={CONTACT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-8 inline-flex items-center gap-2 border-b border-primary/30 pb-1 text-sm font-semibold text-primary transition hover:border-primary hover:gap-3"
                 >
                   Konsultasi dengan Tim Kami

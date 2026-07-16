@@ -26,7 +26,7 @@ export function QualitySafety() {
     },
   ];
   return (
-    <section id="quality-safety" className="py-28 md:py-36 px-8 md:px-16">
+    <section id="quality-safety" className="py-16 md:py-36 px-8 md:px-16">
       <div className="container-x grid gap-16 lg:grid-cols-12 lg:items-center lg:gap-20">
         <div className="lg:col-span-6">
           <div className="relative overflow-hidden rounded-sm">

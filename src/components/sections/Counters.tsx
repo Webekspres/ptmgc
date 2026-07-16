@@ -33,7 +33,7 @@ export function Counters() {
         }}
         aria-hidden
       />
-      <div className="container-x relative grid grid-cols-2 gap-8 py-20 md:grid-cols-5 md:py-24">
+      <div className="container-x relative grid grid-cols-2 gap-8 py-12 md:grid-cols-5 md:py-24">
         {items.map((it) => {
           // eslint-disable-next-line react-hooks/rules-of-hooks
           const v = useCounter(it.n, active);
