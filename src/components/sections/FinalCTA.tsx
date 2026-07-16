@@ -1,5 +1,5 @@
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
-import { CONTACT_URL, EMAIL, EMAIL_URL, PHONE, PHONE_URL, WHATSAPP_DISPLAY } from "./constants";
+import { CONTACT_URL, EMAIL, EMAIL_URL, PHONE, PHONE_URL } from "./constants";
 import { PrimaryCTA } from "./primitives";
 import heroImg from "@/assets/hero-construction.jpg";
 
@@ -48,10 +48,7 @@ export function FinalCTA() {
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-1.5 text-sm font-semibold text-white/80 transition hover:text-gold"
             >
-              <span className="flex flex-col items-start leading-tight">
-                <span>Mulai Proyek Anda</span>
-                <span className="text-[10px] font-normal text-white/50">{WHATSAPP_DISPLAY}</span>
-              </span>
+              Mulai Proyek Anda
               <ArrowUpRight
                 className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 strokeWidth={2}
@@ -64,10 +61,7 @@ export function FinalCTA() {
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-1.5 text-sm font-semibold text-white/80 transition hover:text-gold"
             >
-              <span className="flex flex-col items-start leading-tight">
-                <span>Dapatkan Saran Profesional</span>
-                <span className="text-[10px] font-normal text-white/50">{WHATSAPP_DISPLAY}</span>
-              </span>
+              Dapatkan Saran Profesional
               <ArrowUpRight
                 className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 strokeWidth={2}
