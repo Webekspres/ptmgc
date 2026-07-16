@@ -75,11 +75,6 @@ export function Services() {
                   className="h-full w-full object-cover transition duration-1200 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-primary/80 via-primary/25 to-primary/40" />
-                <div className="absolute left-6 top-6">
-                  <span className="rounded-sm bg-gold px-2.5 py-1 font-display text-xs font-extrabold text-primary-deep shadow-sm">
-                    Layanan
-                  </span>
-                </div>
                 <h3 className="absolute inset-x-6 bottom-5 font-display text-3xl font-extrabold text-white">
                   {s.title}
                 </h3>
