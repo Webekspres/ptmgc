@@ -10,7 +10,6 @@ import serviceProject from "@/assets/service-project.jpg";
 export function Services() {
   const services = [
     {
-      no: "01",
       img: serviceTrading,
       title: "Solusi Trading",
       lede: "Pengadaan terintegrasi untuk perlengkapan industri dan material konstruksi dari produsen dan distributor terverifikasi.",
@@ -21,21 +20,18 @@ export function Services() {
       ],
     },
     {
-      no: "02",
       img: serviceConstruction,
       title: "Layanan Konstruksi",
       lede: "Eksekusi konstruksi lingkup penuh untuk proyek komersial, industri, dan infrastruktur — dari pekerjaan tanah hingga serah terima.",
       benefits: ["Kontraktor umum", "Pekerjaan struktur & sipil", "Fit-out & finishing"],
     },
     {
-      no: "03",
       img: serviceEngineering,
       title: "Dukungan Teknik",
       lede: "Keahlian teknis mencakup koordinasi desain, kajian struktur, dan penyusunan spesifikasi untuk bangunan yang kompleks.",
       benefits: ["Value engineering", "Kajian desain & kelayakan bangun", "Dokumentasi teknis"],
     },
     {
-      no: "04",
       img: serviceProject,
       title: "Manajemen Proyek",
       lede: "Kepemimpinan program yang disiplin, mencakup perencanaan, penganggaran, pengadaan, eksekusi, dan pengawasan risiko.",
@@ -79,11 +75,8 @@ export function Services() {
                   className="h-full w-full object-cover transition duration-1200 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-primary/80 via-primary/25 to-primary/40" />
-                <div className="absolute left-6 top-6 flex items-center gap-3">
+                <div className="absolute left-6 top-6">
                   <span className="rounded-sm bg-gold px-2.5 py-1 font-display text-xs font-extrabold text-primary-deep shadow-sm">
-                    {s.no}
-                  </span>
-                  <span className="rounded-sm bg-black/35 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-sm">
                     Layanan
                   </span>
                 </div>
