@@ -1,5 +1,5 @@
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
-import { CONTACT_URL, EMAIL, EMAIL_URL, PHONE, PHONE_URL } from "./constants";
+import { Mail, MapPin, Phone } from "lucide-react";
+import { EMAIL, EMAIL_URL, PHONE, PHONE_URL } from "./constants";
 import { PrimaryCTA } from "./primitives";
 import heroImg from "@/assets/hero-construction.jpg";
 
@@ -32,41 +32,16 @@ export function FinalCTA() {
             <span className="text-gold">masa depan bersama.</span>
           </h2>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/85">
-            Baik Anda sedang merencanakan perluasan fasilitas, pengadaan berskala besar, atau
-            menyiapkan program konstruksi baru, tim kami siap meninjau kebutuhan Anda dan menawarkan
-            langkah kerja yang terstruktur.
+            Setiap proyek dimulai dengan pemahaman yang baik. Baik untuk pengadaan barang, perluasan
+            fasilitas, maupun program konstruksi rumit, tim kami siap berdiskusi, meninjau kebutuhan
+            Anda, dan menyusun solusi dengan langkah kerja yang terstruktur serta dapat dijalankan
+            secara efektif.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+          <div className="mt-10">
             <PrimaryCTA variant="gold" className="px-7 py-3 text-sm">
-              Ajukan Konsultasi
+              Hubungi Kami
             </PrimaryCTA>
-
-            <a
-              href={CONTACT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-1.5 text-sm font-semibold text-white/80 transition hover:text-gold"
-            >
-              Mulai Proyek Anda
-              <ArrowUpRight
-                className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                strokeWidth={2}
-              />
-            </a>
-
-            <a
-              href={CONTACT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-1.5 text-sm font-semibold text-white/80 transition hover:text-gold"
-            >
-              Dapatkan Saran Profesional
-              <ArrowUpRight
-                className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                strokeWidth={2}
-              />
-            </a>
           </div>
 
           <div className="mt-14 grid gap-6 border-t border-white/15 pt-10 sm:grid-cols-3">

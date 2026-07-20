@@ -4,30 +4,18 @@ import { EMAIL, EMAIL_URL, LOGO_URL, PHONE, PHONE_URL } from "./constants";
 export function Footer() {
   const cols = [
     {
-      t: "Layanan",
-      links: [
-        { label: "Solusi Trading", href: "#services" },
-        { label: "Layanan Konstruksi", href: "#services" },
-        { label: "Dukungan Teknik", href: "#services" },
-        { label: "Manajemen Proyek", href: "#services" },
-      ],
-    },
-    {
       t: "Perusahaan",
       links: [
         { label: "Tentang MGC", href: "#about" },
-        { label: "Mengapa Memilih Kami", href: "#why-choose" },
         { label: "Kualitas & Keselamatan", href: "#quality-safety" },
-        { label: "Proyek Unggulan", href: "#projects" },
       ],
     },
     {
-      t: "Lainnya",
+      t: "Navigasi",
       links: [
         { label: "Industri", href: "#industries" },
         { label: "Proses Kerja", href: "#process" },
-        { label: "Testimoni", href: "#testimonials" },
-        { label: "FAQ", href: "#faq" },
+        { label: "Kontak", href: "#contact" },
       ],
     },
   ];

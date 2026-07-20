@@ -6,15 +6,9 @@ import {
   Hero,
   ClientBar,
   About,
-  WhyChoose,
-  Services,
   Industries,
-  Projects,
   Process,
   QualitySafety,
-  Counters,
-  Testimonials,
-  FAQ,
   FinalCTA,
   Footer,
   FloatingCTA,
@@ -41,15 +35,9 @@ function LandingPage() {
       <Hero />
       <ClientBar />
       <About />
-      <WhyChoose />
-      <Services />
       <Industries />
-      <Projects />
       <Process />
       <QualitySafety />
-      <Counters />
-      <Testimonials />
-      <FAQ />
       <FinalCTA />
       <Footer />
       <FloatingCTA />

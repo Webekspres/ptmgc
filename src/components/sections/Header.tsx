@@ -88,7 +88,7 @@ export function Header() {
 
         <div className="hidden lg:block">
           <PrimaryCTA variant={scrolled ? "primary" : "outline-light"} className="py-2.5!px-5!">
-            Konsultasi Gratis
+            Hubungi Kami
           </PrimaryCTA>
         </div>
 
@@ -114,7 +114,7 @@ export function Header() {
                 {n.label}
               </a>
             ))}
-            <PrimaryCTA className="mt-2 w-full">Konsultasi Gratis</PrimaryCTA>
+            <PrimaryCTA className="mt-2 w-full">Hubungi Kami</PrimaryCTA>
           </div>
         </div>
       ) : null}

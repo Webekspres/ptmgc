@@ -5,12 +5,6 @@ import heroImg from "@/assets/hero-construction.jpg";
 
 export function Hero() {
   const trust = ["Mitra Terpercaya", "Tim Profesional", "Komitmen Kualitas", "Layanan Nasional"];
-  const stats = [
-    { v: "15+", l: "Tahun Pengalaman" },
-    { v: "240+", l: "Proyek Selesai" },
-    { v: "180+", l: "Mitra Bisnis" },
-    { v: "98%", l: "Kepuasan Klien" },
-  ];
 
   return (
     <section id="hero" className="relative isolate overflow-hidden bg-primary-deep px-8 md:px-16">
@@ -52,14 +46,12 @@ export function Hero() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
-            Perusahaan trading dan konstruksi Indonesia yang bermitra dengan produsen, pengembang,
-            kontraktor, dan instansi pemerintah — menghadirkan pengadaan yang disiplin, dukungan
-            teknik, dan eksekusi konstruksi berskala nasional.
+            Kami berdiri dengan semangat menghadirkan cakrawala baru dalam bidang perdagangan dan
+            konstruksi dengan kualitas, profesionalisme dan inovasi untuk kepuasan pelanggan.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-3">
-            <PrimaryCTA variant="gold">Ajukan Konsultasi</PrimaryCTA>
-            <PrimaryCTA variant="outline-light">Diskusikan Proyek Anda</PrimaryCTA>
+          <div className="mt-10">
+            <PrimaryCTA variant="gold">Hubungi Kami</PrimaryCTA>
           </div>
 
           <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3">
@@ -70,27 +62,6 @@ export function Hero() {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="relative mt-20 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-5">
-          {stats.map((s, i) => (
-            <div
-              key={s.l}
-              className="reveal group relative overflow-hidden rounded-md border border-white/15 bg-white/7 p-6 backdrop-blur-xl transition-all duration-300 hover:border-gold/50 hover:bg-white/12 md:p-8"
-              style={{ animationDelay: `${0.15 * i + 0.2}s` }}
-            >
-              <div className="flex items-baseline gap-0.5 font-display text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl">
-                {s.v.replace(/[+%]/g, "")}
-                <span className="text-gold">{s.v.match(/[+%]/)?.[0]}</span>
-              </div>
-              <div className="mt-3 flex items-center gap-2">
-                <span className="h-1.5 w-1.5 flex-none rounded-full bg-gold/70" />
-                <span className="text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
-                  {s.l}
-                </span>
-              </div>
-            </div>
-          ))}
         </div>
 
         <a

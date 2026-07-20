@@ -12,9 +12,8 @@ export const CONTACT_URL = WHATSAPP_URL;
 
 export const NAV = [
   { id: "about", label: "Perusahaan" },
-  { id: "services", label: "Layanan" },
   { id: "industries", label: "Industri" },
-  { id: "projects", label: "Proyek" },
   { id: "process", label: "Proses Kerja" },
+  { id: "quality-safety", label: "Kualitas & Keselamatan" },
   { id: "contact", label: "Kontak" },
 ] as const;

@@ -57,8 +57,8 @@ export function Process() {
             />
           </div>
           <p className="text-body lg:col-span-4">
-            Setiap proyek mengikuti metodologi yang sama sehingga kualitas, jadwal, dan hasil
-            tetap konsisten.
+            Setiap proyek umumnya mengikuti metodologi yang sama sehingga kualitas, jadwal, dan
+            hasil tetap konsisten.
           </p>
         </div>
 

@@ -16,7 +16,7 @@ export function ClientBar() {
     <section className="border-y border-border bg-surface-2 px-8 md:px-16">
       <div className="container-x flex flex-col gap-5 py-10 md:flex-row md:items-center md:gap-10">
         <p className="shrink-0 text-xs font-semibold uppercase tracking-[0.22em] text-body">
-          Dipercaya Lintas Sektor
+          Melayani Pelanggan Lintas Sektor
         </p>
 
         <div className="relative min-w-0 flex-1 overflow-hidden">
